@@ -1,0 +1,5 @@
+DateTrue = 
+CALENDAR(
+    MIN(MIN('demand_tidy_pipeline_C (2)'[interval_start]), MIN(price_tidy_pipeline_C[interval_start])),
+    MAX(MAX('demand_tidy_pipeline_C (2)'[interval_start]), MAX(price_tidy_pipeline_C[interval_start]))
+)
