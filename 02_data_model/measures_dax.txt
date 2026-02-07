@@ -1,0 +1,5 @@
+Average price Measure = AVERAGE(price_tidy_pipeline_C[price_aud_per_mwh]) 
+Max price Measure = MAX(price_tidy_pipeline_C[price_aud_per_mwh]) 
+Peak Demand Measure = MAX('demand_tidy_pipeline_C (2)'[demand_mw]) 
+Total Demand Measure = SUM('demand_tidy_pipeline_C (2)'[demand_mw])
+Total Price Measure = SUM(price_tidy_pipeline_C[price_aud_per_mwh]) 
