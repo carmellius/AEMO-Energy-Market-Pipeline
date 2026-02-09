@@ -78,21 +78,6 @@ Periods of negative pricing, which occur in the NEM due to supply-demand imbalan
 
 Dashboard screenshots and explanations are available in the 04_dashboard folder.
 
-## Repository Structure
-aemo-energy-market-pipeline
-README.md
-
-01_raw_data/
-  -README.md
-02_data_model/
-  -README.md
-03_pipeline_architecture/
-  -README.md
-04_dashboard/
-  -README.md
-
-Each folder contains documentation explaining its purpose and how it fits into the overall pipeline.
-
 ## Limitations
 
 Only a limited sample of raw data is included due to dataset size constraints
