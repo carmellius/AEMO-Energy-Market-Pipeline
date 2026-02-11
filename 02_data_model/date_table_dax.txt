@@ -3,3 +3,16 @@ CALENDAR(
     MIN(MIN('demand_tidy_pipeline_C (2)'[interval_start]), MIN(price_tidy_pipeline_C[interval_start])),
     MAX(MAX('demand_tidy_pipeline_C (2)'[interval_start]), MAX(price_tidy_pipeline_C[interval_start]))
 )
+
+
+
+region = 
+DISTINCT(
+    UNION(
+        SELECTCOLUMNS('demand_tidy_pipeline_C (2)', 
+            "region", 'demand_tidy_pipeline_C (2)'[region]),
+        SELECTCOLUMNS(price_tidy_pipeline_C, 
+            "region", price_tidy_pipeline_C[region])
+    )
+)
+ 
